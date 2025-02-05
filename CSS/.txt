@@ -1,0 +1,14 @@
+TOPICS
+
+1. Basics of CSS
+2. CSS units and colors 
+3. Box model
+4. Display and positioning
+5. Layout techniques
+6. CSS Typography
+7. CSS Backgrounds and borders 
+8. Responsive design
+9. CSS variables
+10. CSS Grid vs Flexbox
+11. CSS Scrollbars and overflow 
+12. CSS Frameworks and libraries - Bootstrap, Tailwind CSS, Bulma, Foundation, Materialize, SASS/SCSS

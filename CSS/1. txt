@@ -1,0 +1,50 @@
+1. What is CSS? 
+
+CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML.
+
+2. CSS Syntax 
+
+Inline - <p style="color: rebeccapurple;"></p>
+Internal -
+ <style>
+
+ p {
+  color: red
+ }
+
+</style>
+
+External - 
+ p {
+  color: red
+ }
+
+ 3. Selectors - Universal, Element, Class, Id, psuedo(:)
+
+ 4. CSS Units
+CSS units define how sizes (like width, height, margins, and padding) are measured in a web page. They are mainly categorized into absolute and relative units.
+
+1. Absolute Units
+Absolute units remain the same regardless of screen size or resolution. These units are best suited for print design.
+px is commonly used for web design 
+
+2.Relative units
+They adapt to the surrounding elements, making them more responsive.
+
+em-	Relative to the font-size of the parent	1em = parent font-size
+rem-	Relative to the root <html> font-size	1rem = root font-size
+%-	Percentage of the parent element	50% = half of the parent size
+vh-	Viewport height	1vh = 1% of viewport height
+vw-	Viewport width	1vw = 1% of viewport width
+vmin-	Smaller of vh or vw	Responsive to screen size
+vmax-	Larger of vh or vw	Responsive to screen size
+
+p {
+  font-size: 2em; (Twice the parent's font size )
+}
+
+.container {
+  width: 50vw; (50% of viewport width ) 
+}
+
+5. Colors - rgb, rgba, hex, hsl, hsla
