@@ -1,0 +1,11 @@
+-What not to do:
+
+Entities
+Url encode 
+HTML V XHTML
+HTML Canvas 
+HTML Svg
+HTML Plugins
+HTML Web workets 
+HTML SSE 
+HTML EXAMPLES, REFERENCE WHOLE
