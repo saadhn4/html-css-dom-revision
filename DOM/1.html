@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(100, 100, 100)">
+    <p id="one">This is a paragraph!</p>
+    <h1 class="htag">Heyooo</h1>
+    <h1 class="htag">Yolo</h1>
+    <h2>h2 tag 1</h2>
+    <h2>h2 tag 2</h2>
+    <h3 class="h3tag">H3 tag</h3>
+    <a id="atag">Link to Google</a> <br />
+    <br />
+    <button id="clickBtn">Hover on me</button>
+    <button id="hoverBtn">Click me</button> <br />
+    <br />
+
+    <form id="formtag">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" />
+
+      <label for="password">Password:</label>
+      <input type="text" name="password" id="password" />
+      <button type="submit">Login</button>
+    </form>
+    <br />
+
+    <button id="btn1">Sign up with Google</button>
+  </body>
+  <script>
+    let ptag = document.getElementById("one");
+    console.log(ptag);
+
+    let htag = document.getElementsByClassName("htag");
+    for (let i of htag) {
+      console.log(i);
+    }
+
+    let h2 = document.getElementsByTagName("h2");
+    for (let i of h2) {
+      console.log(i);
+    }
+
+    let h3tag = document.querySelector(".h3tag");
+    console.log(h3tag);
+
+    h3tag.innerHTML = "ayyy man you gtg";
+    ptag.style.backgroundColor = "blue";
+    let h3 = document.createElement("h4");
+    h3.innerHTML = "This is an h4 tag";
+    console.log(h3);
+    ptag.classList.add("addedClass");
+    ptag.classList.remove("addedClass");
+    let atag = document.getElementById("atag");
+    atag.setAttribute("href", "https://google.com");
+
+    let btn = document.getElementById("clickBtn");
+    btn.addEventListener("mouseover", () => {
+      alert("You hovered on this button");
+    });
+
+    let btn2 = document.getElementById("hoverBtn");
+    btn2.addEventListener("click", () => {
+      alert("You clicked on this button");
+    });
+
+    let user = {
+      name: "Saad",
+      age: 20,
+    };
+
+    localStorage.setItem("data", JSON.stringify(user));
+
+    let item = localStorage.getItem("data");
+    console.log(item);
+
+    console.log(navigator.appName); //Netscape
+    console.log(navigator.appVersion); //5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
+    console.log(navigator.appCodeName); //Mozilla
+    console.log(navigator.cookieEnabled); //true
+    console.log(navigator.geolocation);
+
+    let formtag = document.getElementById("formtag");
+    formtag.addEventListener("submit", (e) => {
+      e.preventDefault();
+    });
+
+    console.log(screen.width);
+    console.log(screen.height);
+    console.log(screen.colorDepth);
+    console.log(screen.orientation.type);
+
+    let btn1 = document.getElementById("btn1");
+    let features = "height:500, width:500";
+
+    btn1.addEventListener("click", () => {
+      window.open("https://mail.google.com/", "gmail", features);
+    });
+  </script>
+</html>
